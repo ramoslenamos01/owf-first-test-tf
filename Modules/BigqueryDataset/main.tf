@@ -1,11 +1,13 @@
 
 
 
-provider "google" {
-project = "sandbox-owafi"
-
-
-  
+terraform {
+  required_providers {
+    google = {
+      source  = "hashicorp/google"
+      version = "3.5.0"
+    }
+  }
 }
 
 resource "google_bigquery_dataset" "default" {
