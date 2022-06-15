@@ -2,7 +2,7 @@
 
 
 provider "google" {
-project = "PROJECT_ID"
+project = "sandbox-owafi"
 
 
   
