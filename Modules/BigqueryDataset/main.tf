@@ -10,13 +10,13 @@ terraform {
 
 provider "google" {
 
-
+project = "sandbox-owafi"
   
 }
 
 resource "google_bigquery_dataset" "default" {
 
-  project_id                  = "sandbox-owafi"
+ 
   dataset_id                  = "othy"
   friendly_name               = "othmane"
   description                 = "This is a test description"
