@@ -18,6 +18,8 @@ steps:
 - id: 'branch name'
   name: 'alpine'
   entrypoint: 'sh'  
+  env:
+  - 'PROJECT_ID=$PROJECT_ID'
   args: 
   - '-c'
   - | 
@@ -53,6 +55,8 @@ steps:
 - id: 'tf plan'
   name: 'hashicorp/terraform:1.0.0'
   entrypoint: 'sh'
+  env:
+  - 'PROJECT_ID=$PROJECT_ID'
   args: 
   - '-c'
   - | 
@@ -79,6 +83,8 @@ steps:
 - id: 'tf apply'
   name: 'hashicorp/terraform:1.0.0'
   entrypoint: 'sh'
+  env:
+  - 'PROJECT_ID=$PROJECT_ID'
   args: 
   - '-c'
   - | 
