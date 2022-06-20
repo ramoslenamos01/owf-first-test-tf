@@ -1,12 +1,12 @@
-variable "project" { }
+variable "project_id" { }
 
 
 
 variable "region" {
-  default = "urope-southwest1"
+  default = "europe-southwest1"
 }
 
 variable "zone" {
-  default = "urope-southwest1-b"
+  default = "europe-southwest1-b"
 }
 

@@ -1,2 +1,2 @@
-project                  = "sandbox_owafi"
+project_id                = "sandbox_owafi"
 
