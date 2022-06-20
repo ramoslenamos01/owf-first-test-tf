@@ -29,7 +29,7 @@ provider "google" {
 resource "google_bigquery_dataset" "default" {
 
   
-  dataset_id                  = "test-with-project"
+  dataset_id                  = "testwithproject"
   friendly_name               = "othmane"
   description                 = "This is a test description"
   location                    = "EU"
