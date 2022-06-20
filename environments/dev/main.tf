@@ -1,5 +1,8 @@
 
 terraform {
+backend "gcs" {
+    prefix = "terraform/state"
+    }
   required_providers {
     google = {
       source  = "hashicorp/google"
@@ -25,7 +28,7 @@ provider "google" {
 resource "google_bigquery_dataset" "default" {
 
   
-  dataset_id                  = "othy"
+  dataset_id                  = "test-with-project"
   friendly_name               = "othmane"
   description                 = "This is a test description"
   location                    = "EU"
