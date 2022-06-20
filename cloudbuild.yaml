@@ -25,6 +25,7 @@ steps:
   - | 
       echo "***********************"
       echo "$BRANCH_NAME"
+      echo "$PROJECT_ID"
       echo "***********************"
 
 - id: 'tf init'

@@ -12,7 +12,7 @@ terraform {
 
 locals {
     env        = "dev"
-    project_id = "[MY_PROJECT]"
+    project_id = "[PROJECT_ID]"
     location   = "EU"
     region     = "europe-west1"
 }
