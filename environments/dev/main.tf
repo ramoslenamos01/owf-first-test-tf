@@ -10,16 +10,21 @@ terraform {
 
 
 
-provider "google" {
-project = "sandbox-owafi"
-
-
-  
+locals {
+    env        = "dev"
+    project_id = "[MY_PROJECT]"
+    location   = "EU"
+    region     = "europe-west1"
 }
+
+provider "google" {
+    project = local.project_id
+}
+
 
 resource "google_bigquery_dataset" "default" {
 
-  project                     = "sandbox-owafi"
+  
   dataset_id                  = "othy"
   friendly_name               = "othmane"
   description                 = "This is a test description"
